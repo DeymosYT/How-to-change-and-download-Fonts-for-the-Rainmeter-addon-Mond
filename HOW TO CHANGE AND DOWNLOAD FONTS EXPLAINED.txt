@@ -1,0 +1,40 @@
+HOW TO CHANGE AND DOWNLOAD FONTS EXPLAINED
+NOTE: I will refer to the Rainmeter- Mond visuals displayed on the desktop (e.g. clock; date; ...) as icons.
+I know this might look a bit intimidating but its quite easy.
+
+Right click the part you want to change (for example the clock/date)
+Select "Manage skin"
+Click "Edit" in the top right corner
+(Open in Editor if it didnt happen by default)
+Scroll down until you find " FontFace=... " (For this example, ... will be "Quicksand". For some of the other it will be "Aquatico".) (Please note that you will have to change the font SEPERATELY for  Day, Date and clock, 24 or 12 hour time, depending on what you use. You will know what is what by looking at the square brackets above the textblock. It looks like this: [MeterXXhClock] . In place of the XX there will be 12 or 24, bigger example down below)
+Change the default to the font that you want to use. (e.g. Quicksand -> Anurati)
+	(The font used in the picture is called Anurati and can be downloaded here: Download. 
+	Simply press download, wait 5 seconds, DO NOT PRESS ANYTHING IN THE MEANTIME, head to your
+	download folder, unzip the file, open it, choose the top folder if on mac, bottom folder if not, right 
+	click the font file, hit install, copy the file. Then right click any  icon, click "Rainmeter>", select 
+	"skins>" and finally "Open folder". Open the "Mond" folder. Open the "@Resources" folder . Open 
+	"Fonts". Paste your Font.)
+	7.  Right click the icon you wanted changed, and hit refrsh skin.
+	DONE!
+	Please note that the free downloadable version only includes the English uppercase letters and 
+	nothing else, 	
+	so it might look a bit funky. For the full version you will have to pay.
+
+
+Here is an example code snippit from "Clock":
+
+[MeterDay]
+Meter=String
+MeasureName=MeasureDay
+StringAlign=Center
+StringCase=Upper
+FontFace=Anurati
+FontColor=#Color1#
+FontSize=(40*#Scale#)
+X=(340*#Scale#)
+Y=0
+Text=%1
+InlineSetting=CharacterSpacing | (10*#Scale#) | (10*#Scale#)
+AntiAlias=1
+DynamicVariables=1
+SolidColor=0,0,0,1
